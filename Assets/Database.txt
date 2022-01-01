@@ -1,0 +1,48 @@
+Facility	F000	F_Explore	explore	I8001:1		TRUE	TRUE	0:01	_
+Facility	F001	F_Food	potato	"Power:1,Water:0.5,I0001:3"	"Produce:5,I0001:1"	FALSE	FALSE	0:03	_
+Facility	F002	F_Food	rice	"Power:10,Water:2,I0002:10"	"Produce:10,I0002:8"	FALSE	FALSE	1:00	_
+Facility	F003	F_Food	wheat	"Power:20,Water:1,I0003:10"	"Produce:10,I0003:9"	FALSE	FALSE	3:00	_
+Facility	F004	F_Food	corn	"Power:30,Water:3,I0004:50"	"Produce:50,I0004:50"	FALSE	FALSE	5:00	_
+Facility	F101	F_Foundry	steel	"Power:10,Water:3,I10001:3"	I1002:1	FALSE	FALSE	0:03	_
+Facility	F102	F_Foundry	battery			FALSE	FALSE	5:00	_
+Facility	F103	F_Foundry	battery_old			FALSE	FALSE	10:00	_
+Facility	F104	F_Foundry	battery_new			FALSE	FALSE	15:00	_
+Facility	F105	F_Foundry	battery_best			FALSE	FALSE	25:00	_
+Facility	F106	F_Foundry	copper	"Power:15,Water:4,I10003:3"		FALSE	FALSE	0:03	_
+Facility	F201	F_Power	engine_rocket		Power:50	FALSE	FALSE	1:00	_
+Facility	F202	F_Power	engine_auto		Power:70	FALSE	FALSE	4:00	_
+Facility	F203	F_Power	plant_coal		Power:100	FALSE	FALSE	5:55	_
+Facility	F204	F_Power	heat_geo		Power:200	FALSE	FALSE	17:00	_
+Facility	F205	F_Power	plant_oil		Power:500	FALSE	FALSE	10:00	_
+Facility	F206	F_Power	plant_nuclear		Power:1000	FALSE	FALSE	30:00	_
+Facility	F207	F_Power	plant_fusion		Power:10000	FALSE	FALSE	35:00	_
+Facility	F208	F_Power	heat_light		Power:60	FALSE	FALSE	19:00	_
+Facility	F301	F_Water	pump	Power:5	Water:10	FALSE	FALSE	12:10	_
+Facility	F302	F_Water	pump_ex	Power:20	Water:80	FALSE	FALSE	19:40	_
+Facility	F303	F_Water	pump_max	Power:50	Water:500	FALSE	FALSE	25:58	_
+Market	M001	M_Food	seed_potato	Money:5	I0001:5	FALSE	FALSE	1:00	_
+Market	M002	M_Food	seed_rice	Money:15	I0002:5	FALSE	FALSE	2:00	_
+Market	M003	M_Food	seed_wheat	Money:15	I0003:5	FALSE	FALSE	3:00	_
+Market	M004	M_Food	seed_corn	Money:40	I0004:10	FALSE	FALSE	4:00	_
+Market	M005	M_Util	hire_worker	Money:100	I8002:1	TRUE	TRUE	3:00	_
+Science	S001	S_Food	potato		"TRUE:I0001,TRUE:M001,TRUE:F001"	FALSE	TRUE	0:03	_
+Science	S002	S_Food	rice	"Money:50,TRUE:S001"	"TRUE:I0002,TRUE:M002,TRUE:F002"	FALSE	FALSE	0:30	_
+Science	S003	S_Food	wheat	"Money:100,TRUE:S002"	"TRUE:I0003,TRUE:M003,TRUE:F003"	FALSE	FALSE	2:00	_
+Science	S004	S_Food	corn	"Money:150,TRUE:S003"	"TRUE:I0004,TRUE:M004,TRUE:F004"	FALSE	FALSE	3:00	_
+Science	S005	S_Foundry	steel		TRUE:F101	FALSE	TRUE	0:00	_
+Science	S006	S_Foundry	battery	"Money:300,TRUE:S005"	TRUE:F102	FALSE	FALSE	5:00	_
+Item	I0001	Food	seed_potato		Money:1	FALSE	FALSE	0:00	_
+Item	I0002	Food	seed_rice		Money:3	FALSE	FALSE	0:00	_
+Item	I0003	Food	seed_wheat		Money:3	FALSE	FALSE	0:00	_
+Item	I0004	Food	seed_corn		Money:5	FALSE	FALSE	0:00	_
+Item	I1001	Material	rough_steel		Money:2	FALSE	FALSE	0:00	_
+Item	I1002	Material	steel		Money:10	FALSE	FALSE	0:00	_
+Item	I1003	Material	rough_copper		Money:3	FALSE	FALSE	0:00	_
+Item	I1004	Material	copper		Money:15	FALSE	FALSE	0:00	_
+Item	I1005	Material	coal		Money:20	FALSE	FALSE	0:00	_
+Item	I8001	Util	explore			FALSE	FALSE	0:00	_
+Item	I8002	Util	worker	Produce:1		FALSE	FALSE	0:00	_
+Item	I9001	Equip	pickax		Money:1	FALSE	FALSE	0:00	_
+Item	I9002	Equip	detector		Money:2	FALSE	FALSE	0:00	_
+Item	I9003	Equip	detector_sound		Money:3	FALSE	FALSE	0:00	_
+Item	I9004	Equip	drill		Money:4	FALSE	FALSE	0:00	_
